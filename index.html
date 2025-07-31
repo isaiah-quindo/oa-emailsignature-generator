@@ -61,7 +61,7 @@
                                         id="email"
                                         placeholder="Enter your email" />
                                 </div>
-                                <div class="mb-3">
+                                <!-- <div class="mb-3">
                                     <label for="phone" class="form-label"
                                         >Phone Number</label
                                     >
@@ -70,7 +70,7 @@
                                         class="form-control"
                                         id="phone"
                                         placeholder="Enter your phone number" />
-                                </div>
+                                </div> -->
                             </form>
                         </div>
                     </div>
@@ -93,8 +93,8 @@
                                 border: 1px solid #e0e0e0;
                                 border-radius: 12px;
                                 background-color: #f9fafb;
-                                max-width: 500px;
-                                width: 500px;
+                                max-width: 300px;
+                                width: 300px;
                             ">
                             <tbody>
                                 <tr>
@@ -125,13 +125,8 @@
                                             id="signature-position">
                                             Your position
                                         </p>
-                                    </td>
-                                    <td
-                                        style="
-                                            padding: 12px 12px 12px 0;
-                                            width: 50%;
-                                        ">
-                                        <p class="card-text text-end m-0 fs-6">
+                                        <p
+                                            class="card-text text-start m-0 fs-6">
                                             <a
                                                 href="mailto:isaiah@openarchitectsk12.com"
                                                 id="signature-email"
@@ -140,17 +135,6 @@
                                                     text-decoration: none;
                                                 "
                                                 >email@openarchitectsk12.com</a
-                                            >
-                                        </p>
-                                        <p class="card-text text-end m-0 fs-6">
-                                            <a
-                                                href="tel:+12025550123"
-                                                id="signature-phone"
-                                                style="
-                                                    color: #15b79e;
-                                                    text-decoration: none;
-                                                "
-                                                >+1 (202) 555-0123</a
                                             >
                                         </p>
                                     </td>
@@ -194,14 +178,14 @@
                     emailLink.textContent = email;
                     emailLink.href = "mailto:" + email;
                 });
-            document
-                .getElementById("phone")
-                .addEventListener("input", function (e) {
-                    var phone = e.target.value || "+1 (202) 555-0123";
-                    var phoneLink = document.getElementById("signature-phone");
-                    phoneLink.textContent = phone;
-                    phoneLink.href = "tel:" + phone;
-                });
+            // document
+            //     .getElementById("phone")
+            //     .addEventListener("input", function (e) {
+            //         var phone = e.target.value || "+1 (202) 555-0123";
+            //         var phoneLink = document.getElementById("signature-phone");
+            //         phoneLink.textContent = phone;
+            //         phoneLink.href = "tel:" + phone;
+            //     });
         </script>
     </body>
 </html>
